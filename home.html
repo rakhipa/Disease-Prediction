@@ -1,0 +1,87 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+    <div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+<style>
+body {
+    font-family: Cambria;
+    height: 100%;
+    background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+}
+</style>
+<div class="container">
+    <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black; background-color:#b3bdc7">
+        <h1> Disease Predictor</h1>
+        <br>
+        <h2>Model Accuracies:</h2>
+        <ul>
+            <li>Diabetes Model: <strong>92.54%</strong></li>
+            <li>Heart Disease Model: <strong>98.70%</strong></li>
+            <li>Breast Cancer Model: <strong>97.66%</strong></li>
+           
+        </ul>
+        <br>
+        <h3>Information about the Diseases:</h3>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px; background-color: #b3bdc7">
+                <h4>Diabetes</h4>
+                <p>Diabetes mellitus refers to a group of diseases that affect how your body uses blood sugar (glucose). Glucose is vital to your health because it's an important source of energy for the cells that make up your muscles and tissues. It's also your brain's main source of fuel. The underlying cause of diabetes varies by type. But, no matter what type of diabetes you have, it can lead to excess sugar in your blood. Too much sugar in your blood can lead to serious health problems.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Increased thirst</li>
+                    <li>Frequent urination</li>
+                    <li>Extreme hunger</li>
+                    <li>Unexplained weight loss</li>
+                    <li>Blurred vision</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px; background-color: #b3bdc7">
+                <h4>Heart/ Cardiovascular Disease</h4>
+                <p>Cardiovascular disease (heart disease) refers to a group of diseases that affect the heart and blood vessels of your body. These diseases can affect one or many parts of your heart and /or blood vessels. A person may be symptomatic (physically experience the disease) or be asymptomatic (not feel anything at all).</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Pounding or racing heart (palpitations)</li>
+                    <li>Chest pain</li>
+                    <li>Sweating</li>
+                    <li>Lightheadedness</li>
+                    <li>Shortness of breath</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px; background-color: #b3bdc7">
+                <h4>Breast Cancer</h4>
+                <p>Breast cancer is a type of cancer that starts in the breast. It can start in one or both breasts. After skin cancer, breast cancer is the most common cancer diagnosed in women in the United States. Breast cancer can occur in both men and women, but it's far more common in women.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>New lump in the breast or underarm (armpit)</li>
+                    <li>Thickening or swelling of part of the breast.</li>
+                    <li>Irritation or dimpling of breast skin</li>
+                    <li>Redness or flaky skin in the nipple area or the breast</li>
+                    <li>Pulling in of the nipple or pain in the nipple area</li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+        <br>
+       
+    </div>
+</div>
+{% endblock %}
